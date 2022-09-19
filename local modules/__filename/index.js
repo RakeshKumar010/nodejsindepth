@@ -1,0 +1,1 @@
+console.log("Filename of the current file is: \n",__filename);

@@ -1,0 +1,1 @@
+console.log("Directory name is : \n",__dirname);
