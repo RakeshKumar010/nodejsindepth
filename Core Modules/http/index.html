@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            background: rgb(99, 94, 94);
+        } */
+        .header{
+            background-color: cadetblue;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            margin: 0px 250px 0px 250px;
+            border-radius: 50%;
+            box-shadow: 10px 10px 8px rgb(41, 41, 41);
+        
+        }
+        .header h1{
+            background-color: cadetblue;
+        }
+
+        .para{
+            background-color: cadetblue;
+            padding: 20px;
+            margin: 50px 900px 0px 50px;
+            box-shadow: 10px 10px 8px rgb(58, 58, 58);
+            border-radius: 5%;
+        }
+        .para p{
+            background-color: cadetblue;
+        }
+        #para2{
+            
+            background-color: cadetblue;
+            padding: 20px;
+            margin: -17% 5% 0% 40%;
+            box-shadow: 10px 10px 8px rgb(59, 59, 59);
+            width: 50vw;
+            height: 60vh;
+            overflow:auto;
+            border-radius: 20px 0px 0px 0px ;
+ 
+  
+        }
+        #para2 p{
+            background-color: cadetblue;
+        }
+        .example em{
+            background-color: rgb(194, 180, 180);
+            padding: 1%;
+        }
+        pre{
+            background-color: rgb(194, 180, 180);
+            padding: 3%;
+        }
+        h4{
+            background-color:cadetblue;
+            color: rgb(102, 255, 102);
+        }
+    </style>
+</head>
+<body>
+ <div class="header">
+    <h1>HTTP Module</h1>
+ </div>
+ <div class="para">
+    <h3 style="background-color:cadetblue ;">What is http Modules ?</h3>
+    <p>Node.js has a built-in module called HTTP, which allows Node.js to transfer data over the Hyper Text Transfer Protocol (HTTP). <br>
+
+        To include the HTTP module, use the <strong style="background-color:cadetblue ;">require()</strong>  method:</p>
+        <div class="example">
+            <p><em>var http = require('http');</em> </p>
+        </div>
+ </div>
+ <div id="para2">
+    <h3 style="background-color:cadetblue;">Node.js http.createServer() Method</h3>
+   
+    <p>The http.createServer() method turns your computer into an HTTP server. <br>
+
+        The http.createServer() method creates an HTTP Server object. <br>
+        
+        The HTTP Server object can listen to ports on your computer and execute a function, a requestListener, each time a request is made.</p>
+        <h4>Example</h4>
+        <div class="example">
+            <pre>const http=require('http');
+
+const port =3000;
+const hostname='localhost';
+                
+const server  = http.createServer((req,res)=>{
+     res.end('hello world');
+                
+});
+                
+</pre>
+
+    <h3 style="background-color:cadetblue;" >Node.js server.listen() Method</h3>
+   
+    <p>The server.listen() method creates a listener on the specified port or path.</p>
+        <h4>Example</h4>
+        <div class="example">
+            <pre>
+                
+server.listen(port,hostname,()=>{
+    console.log(`server is open at http://${hostname}:${port}`);
+});</pre>
+        </div>
+ </div>
+</body>
+</html>
