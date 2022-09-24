@@ -9,7 +9,7 @@ const server  = http.createServer((req,res)=>{
     // res.writeHead(404,{'content-type':'text/html'});
     res.statusCode=200;
     res.setHeader('content-type','text/html')
-    res.end(website);
+    res.end(website);   
 });
 // const server  = http.createServer((req,res)=>{
 //     res.writeHead(404,{'content-type':'text/html'});
